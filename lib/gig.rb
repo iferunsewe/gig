@@ -1,0 +1,6 @@
+require 'httparty'
+require 'open-uri'
+require 'gig/version'
+require 'gig/gig'
+require 'gig/repositories'
+require 'gig/downloader'
