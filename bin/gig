@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'gig'
+
+gig = Gig::Gig.new(ARGV)
+gig.run
