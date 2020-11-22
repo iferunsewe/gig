@@ -16,8 +16,10 @@ module Gig
         return false if response.parsed_response['total_count'].zero?
 
         @owners = request.parsed_response['items'].map { |item| item['owner'] }
-        true
+        return true
       end
+      puts "Status: #{response.code}. Message: #{code_to_message(response.code)}"
+      false
     end
 
     private
@@ -36,6 +38,15 @@ module Gig
       {
         'Accept' => 'application/vnd.github.v3+json'
       }
+    end
+
+    def code_to_message(code)
+      message_hash = {
+        '304': 'Not Modified',
+        '422': 'Validation Failed. Please check your request is following the documentation outlined here https://docs.github.com/en/free-pro-team@latest/rest/reference/search',
+        '503': 'The github service unavailable is currently unavailable. Please try again later'
+      }
+      message_hash[code.to_s.to_sym]
     end
   end
 end
