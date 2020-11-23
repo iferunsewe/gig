@@ -81,4 +81,24 @@ RSpec.describe Gig::Repositories do
       expect(repositories.search).to eq(false)
     end
   end
+
+  context 'when response gives a 403 and the rate limit is hit' do
+    let(:code) { 403 }
+    let(:response) do
+      instance_double(
+        HTTParty::Response,
+        headers: {
+          'x-ratelimit-limit' => ['10'],
+          'x-ratelimit-remaining' => ['0'],
+          'x-ratelimit-reset' => [Time.now.to_i + 50]
+        },
+        code: 403
+      )
+    end
+
+    it 'returns false' do
+      allow(HTTParty).to receive(:get).and_return(response)
+      expect(repositories.search).to eq(false)
+    end
+  end
 end
