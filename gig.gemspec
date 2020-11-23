@@ -25,4 +25,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "bin"
   spec.executables   = ["gig"]
   spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "httparty"
 end
