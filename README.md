@@ -9,7 +9,7 @@ This gem focuses on github's search api for repositories and downloading reposit
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gig'
+gem 'gig2'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gig
+    $ gem install gig2
 
 ## Usage
 
