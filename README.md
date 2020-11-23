@@ -27,7 +27,7 @@ Once you've installed gig, you should be able to run the gem by executing the fo
 Example of a command to run is `bin/gig topic:ruby topic:rails`.
 
 If your response is a good one (status 200) then the program will retrieve each owner of the relative repositories returned and downloach each one's image. These images will be downloaded to
-a directory at the root of this project. The directory's name represents the query you made e.g. from the example above the directory would be called `topic:ruby-topic:rails`.
+a directory at the root of your project. The directory's name represents the query you made e.g. from the example above the directory would be called `topic:ruby-topic:rails`.
 
 The github API has a rate limit of no more than 10 requests per second. If this rate limit is hit then you should see a message that explains what has happened and how long till you can make a request. Please find out more [here](https://docs.github.com/en/free-pro-team@latest/rest/reference/search#rate-limit)
 
