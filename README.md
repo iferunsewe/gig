@@ -4,6 +4,8 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 This gem focuses on github's search api for repositories and downloading repositories's owner images. More information can be found [here](https://docs.github.com/en/free-pro-team@latest/rest/reference/search#search-repositories).
 
+You can find the gem's page on rubygems.org [here](https://rubygems.org/gems/gig2).
+
 ## Installation
 
 Add this line to your application's Gemfile:
