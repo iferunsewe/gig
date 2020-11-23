@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gig (0.1.0)
+    gig2 (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -53,7 +53,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  gig!
+  gig2!
   httparty
   pry-byebug
   rake (~> 12.0)

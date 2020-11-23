@@ -1,7 +1,7 @@
 require_relative 'lib/gig/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gig"
+  spec.name          = "gig2"
   spec.version       = Gig::VERSION
   spec.authors       = ["Ife Runsewe"]
   spec.email         = ["iferunsewe@gmail.com"]
