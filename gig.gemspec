@@ -8,15 +8,15 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "This repo allows you to download repository owner's images given a search term"
   spec.description   = "This repo allows you to download repository owner's images given a search term"
-  spec.homepage      = "http://www.bbc.co.uk"
+  spec.homepage      = "http://www.ifesgig.co.uk"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "http://www.bbc.co.uk"
-  spec.metadata["changelog_uri"] = "http://www.bbc.co.uk"
+  spec.metadata["source_code_uri"] = "https://github.com/iferunsewe/gig"
+  spec.metadata["changelog_uri"] = "https://github.com/iferunsewe/gig"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
